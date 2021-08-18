@@ -3,6 +3,7 @@ const path = require('path')
 const dotenv = require('dotenv')
 const colors = require('colors')
 const morgan = require('morgan')
+const ejs = require('ejs')
 const sendEmail = require('./utils/sendEmail')
 
 
@@ -19,6 +20,10 @@ app.use(express.urlencoded({
 app.use(express.json())
 
 
+// View Engine Setup
+app.set("views", path.join(__dirname, 'views'))
+app.set("view engine", "ejs")
+
 // Dev logging middleware
 if(process.env.NODE_ENV === 'development') {
     app.use(morgan('dev'))
@@ -31,7 +36,7 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'views', 'index.html'))
 })
 
-app.post('/email', async (req, res) => {
+app.post('/resume', async (req, res) => {
     //Send an email here but currently dummy email
     const { email, fullname, address, personalProfile, experience, education, skills, certifications } = req.body;
     // console.log('Data:', subject);
@@ -55,7 +60,20 @@ app.post('/email', async (req, res) => {
         //     skills, 
         //     certifications
         // })
-        res.sendFile(path.join(__dirname, 'views', 'resume.html'))
+        // res.sendFile(path.join(__dirname, 'views', 'resume.html'))
+
+        res.render("displayResume",
+            {
+                email, 
+                fullname, 
+                address, 
+                personalProfile, 
+                experience, 
+                education, 
+                skills, 
+                certifications
+            }
+        );
     } catch (error) {
         console.error(`${error}`.red.inverse)
     }
