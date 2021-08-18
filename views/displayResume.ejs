@@ -10,6 +10,7 @@
     <style>
         body {
             box-sizing: border-box;
+            width: 100%;
         }
 
         form {
@@ -31,49 +32,34 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <img src="https://hng.tech/img/brand-logo.png" alt="" />
-        </div>
+
+
+        <img src="https://hng.tech/img/brand-logo.png" alt="" />
+
        <h2>MY RESUME</h2>
        <pre>
         <form action="/email" method="POST">
-            <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
+            Email address :
                 <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email" value='<%=email%>' placeholder="Enter email" readonly>
                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-            </div>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Full name</label>
+    
+            Full name :
                 <input type="text" class="form-control" id="email" aria-describedby="emailHelp" name="fullname" value='<%=fullname%>' placeholder="Enter fullname" readonly>
-            </div>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Address</label>
+            Address :
                 <input type="text" class="form-control" id="email" aria-describedby="emailHelp" name="address" value='<%=address%>' placeholder="Enter Address" readonly>
-            </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1">Personal Profile</label>
+            Personal Profile :
                 <textarea class="form-control" id="text" placeholder="Message"  name="personalProfile"  readonly><%=personalProfile%></textarea>
-            </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1">Work Experience</label>
+            Work Experience :
                 <textarea class="form-control" id="text" placeholder="Work Experience"  name="experience" value='<%=experience%>' readonly><%=experience%></textarea>
-            </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1">Education History</label>
+            Education History :
                 <textarea class="form-control" id="text" placeholder="Education History"  name="education" value='<%=education%>' readonly><%=education%></textarea>
-            </div>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Skills</label>
+            Skills :
                 <textarea class="form-control" id="text" placeholder="Skills"  name="skills" value='<%=skills%>' readonly><%=skills%></textarea>
-            </div>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Certifications</label>
+            Certifications :
                 <textarea class="form-control" id="text" placeholder="certifications"  name="certifications" value='<%=certifications%>' readonly><%=certifications%></textarea>
-            </div>
         </form>
         </pre>
-    </div>
+
 
     <!--  -->
     
