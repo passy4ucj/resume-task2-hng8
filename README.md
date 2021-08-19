@@ -1,6 +1,6 @@
-# DevCamper API
+# HNG API
 
-> HNG-8 Task2 Resume Form
+> HNG-8 Task2 Resume Form - Fill your resume and get an email notification
 
 ## Usage
 
