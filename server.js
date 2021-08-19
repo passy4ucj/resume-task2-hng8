@@ -36,9 +36,9 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'views', 'index.html'))
 })
 
-app.post('/resume', async (req, res) => {
+app.post('/email', async (req, res) => {
     //Send an email here but currently dummy email
-    const { email, fullname, address, personalProfile, experience, education, skills, certifications } = req.body;
+    const { email, fullname,comment } = req.body;
     // console.log('Data:', subject);
    console.log('Pascal Chijioke Ojinnaka')
     try {
@@ -46,7 +46,7 @@ app.post('/resume', async (req, res) => {
             from: `${process.env.FROM_EMAIL}`,
             email: `${email}`,
             subject: 'Resume',
-            message: `Email: ${email} \n\nFull Name: ${fullname} \n\nAddress: ${address} \n\nPersonalProfile: ${personalProfile} \n\nExperience: ${experience} \n\nEducation: ${education} \n\nSkills: ${skills} \n\nCertifications: ${certifications}`
+            message: `Dear Pascal, Kindly see below comment \n\nFullname : ${fullname}\n\nComment : ${comment}`
         })
 
         // res.json({
@@ -62,16 +62,11 @@ app.post('/resume', async (req, res) => {
         // })
         // res.sendFile(path.join(__dirname, 'views', 'resume.html'))
 
-        res.render("displayResume",
+        res.render("displayFeedback",
             {
                 email, 
                 fullname, 
-                address, 
-                personalProfile, 
-                experience, 
-                education, 
-                skills, 
-                certifications
+               comment
             }
         );
     } catch (error) {
