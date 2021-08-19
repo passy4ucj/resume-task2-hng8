@@ -40,7 +40,7 @@ app.post('/resume', async (req, res) => {
     //Send an email here but currently dummy email
     const { email, fullname, address, personalProfile, experience, education, skills, certifications } = req.body;
     // console.log('Data:', subject);
-   
+   console.log('Pascal Chijioke Ojinnaka')
     try {
         await sendEmail({
             from: `${process.env.FROM_EMAIL}`,
