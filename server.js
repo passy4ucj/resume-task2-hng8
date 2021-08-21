@@ -29,6 +29,8 @@ if(process.env.NODE_ENV === 'development') {
     app.use(morgan('dev'))
 }
 
+app.use(express.static('views'));
+
 app.get('/', (req, res) => {
     // res.json({
     //     message: "HNG"
@@ -38,7 +40,7 @@ app.get('/', (req, res) => {
 
 app.post('/email', async (req, res) => {
     //Send an email here but currently dummy email
-    const { email, fullname,comment } = req.body;
+    const { email, name,message } = req.body;
     // console.log('Data:', subject);
    console.log('Pascal Chijioke Ojinnaka')
     try {
@@ -46,7 +48,7 @@ app.post('/email', async (req, res) => {
             from: `${process.env.FROM_EMAIL}`,
             email: `${email}`,
             subject: 'Resume',
-            message: `Dear Pascal, Kindly see below comment \n\nFullname : ${fullname}\n\nComment : ${comment}`
+            message: `Dear Pascal, Kindly see below comment \n\nFullname : ${name}\n\nComment : ${message}`
         })
 
         // res.json({
@@ -65,8 +67,8 @@ app.post('/email', async (req, res) => {
         res.render("displayFeedback",
             {
                 email, 
-                fullname, 
-               comment
+                name, 
+               message
             }
         );
     } catch (error) {

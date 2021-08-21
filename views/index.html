@@ -1,453 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../assets/css/index.css">
-    <link rel="shortcut icon" href="" type="image/x-icon">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <title>Pascal Ojinnaka || Backend Developer </title>
-    <style>
-        @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+	<head>
+		<meta charset="utf-8">
 
-* {
-  padding: 0;
-  margin: 0;
-  font-family: "Open Sans", sans-serif;
-  outline: none;
-  border: none;
-  box-sizing: border-box;
-}
+		<title>Pascal Ojinnaka - Resume</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+        <meta name="author" content="templatemo">
+        <!-- 
+        Lavish HTML CSS Template
+        https://templatemo.com/tm-458-lavish
+        -->
+        
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-a {
-  color: inherit;
-  text-decoration: underline;
-  display: inline-block;
-}
+		<!-- animate -->
+		<link rel="stylesheet" href="css/animate.min.css">
+		<!-- bootstrap -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- font-awesome -->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- google font -->
+		<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700,800' rel='stylesheet' type='text/css'>
+		<!-- fullpage -->
+		<link rel="stylesheet" href="css/jquery.fullPage.css">
+		<!-- custom -->
+		<link rel="stylesheet" href="css/templatemo-style.css">
 
-a:hover {
-  color: rgb(107, 136, 188);
-  text-decoration: none;
-}
+	</head>
+	<body>
 
-ul {
-  list-style-type: none;
-}
+	<div id="fullpage">
 
-h1,
-h2,
-span {
-  font-weight: 400;
-}
+		<!-- start home -->
+		<div id="home" class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2"></div>
+					<div class="col-md-8 wow fadeIn" data-wow-delay="0.9s">
+						<h3>PASCAL OJINNAKA</h3>
+						<!-- <h1>PASSY</h1> -->
+						<h2 class="rotate">BACKEND ENGINEER, TECHNICAL WRITER, AZURE DEVELOPER</h2>
+						<p>Experienced and results-orientedFull-stack Developer and loves Backend with a deep passion forthe job and experience in buildinghigh quality Web applications andAPIs. Offering a strong attention todetail and accuracy, excellentproblem-solving skills, and theimportant ability to work in fast-paced team environments, Pascalis a reliable individual withdetermination to meet and exceedall assigned results.</p>
+						<a href="#work" class="btn btn-default smoothScroll wow fadeInUp" data-wow-delay="1s">Get started</a>
+					</div>
+					<div class="col-md-2"></div>
+				</div>
+			</div>
+		</div>
+		<!-- end home -->
 
-/* GENERAL SELECTORS */
-
-h1 {
-  text-transform: uppercase;
-}
-
-h2 {
-  font-size: 1.25em;
-  text-transform: capitalize;
-}
-
-.section__heading {
-  /* border: 2px solid blueviolet; */
-  text-transform: uppercase;
-  margin: 1.5em 0 1.25em;
-  position: relative;
-}
-
-.section__heading::after {
-  content: "";
-  position: absolute;
-  top: 130%;
-  left: 0;
-  width: 5%;
-  min-width: 50px;
-  border-top: 2px solid rgb(225, 225, 224);
-}
-
-/* BODY */
-
-body {
-  /* min-width: 100vw; */
-  /* border: 2px solid red; */
-}
-
-/* FLEX */
-
-body,
-.flex-container,
-.aside__container {
-  display: flex;
-  flex-flow: row wrap;
-  /* margin: 1.5em 0; */
-}
-
-/* OTHER STYLES */
-
-.header__container {
-  background-color: rgb(9, 109, 9);
-  color: #fff;
-  text-align: center;
-
-  padding: 2em 1.5em;
-
-  display: grid;
-  place-content: center;
-
-  flex: 1 0 100%;
-}
-
-.header__container hr {
-  width: 10%;
-  min-width: 50px;
-  border-top: 2px solid #fff;
-  margin: 1em auto;
-}
-
-.header__heading {
-}
-
-.header__sub-heading {
-  font-size: 0.8em;
-}
-
-.flex-container {
-  /* border: 2px solid red; */
-
-  margin: 0 auto;
-  padding: 0 2em;
-
-  width: 100%;
-  max-width: 1200px;
-}
-
-.flex-container > * {
-  /* border: 2px solid blue; */
-  flex-grow: 1;
-  margin: 0 1em;
-  /* width: 100%;
-    min-width: 165px; */
-}
-
-.flex-container > *:first-child {
-  /* border: 2px solid blueviolet; */
-  flex-basis: 70%;
-}
-
-.flex-container > *:last-child {
-  /* border: 2px solid blue; */
-  flex-grow: 1;
-  flex-basis: 20%;
-  min-width: 200px;
-}
-
-/* MAIN */
-
-.main__wrapper {
-  /* padding: 0 2em; */
-  /* border: 2px solid blue; */
-}
-
-/* SUMMARY */
-
-.summary__container {
-}
-
-.summary__paragraph,
-.experience__activity {
-  font-size: 0.85em;
-  line-height: 2em;
-}
-
-/* EXPERIENCE */
-
-.experience__work-list-container {
-  /* border: 2px solid red; */
-}
-
-.experience__work-list-item {
-  /* border: 2px solid blue; */
-  margin: 2em 0;
-}
-
-.experience__position,
-.education__position {
-  font-size: 1em;
-}
-
-.experience__workplace,
-.education__workplace {
-  /* border: 2px solid red; */
-  font-style: italic;
-}
-
-.experience__activity-container,
-.education__list-container {
-  /* border: 2px solid red; */
-  margin-left: 2em;
-  list-style-position: inside;
-  list-style-type: disc;
-}
-
-.experience__activity,
-.education__list-item,
-.contact-info__list-item,
-.skills__list-item,
-.stack__list-item,
-.interest__list-item {
-  margin: 0.8em 0;
-}
-
-.education__course {
-  font-size: 0.85em;
-  text-transform: capitalize;
-  margin-top: 0.25em;
-}
-
-.education__list-container {
-  list-style-type: none;
-  margin-left: 0;
-}
-
-/* ASIDE */
-
-.aside__container {
-  justify-content: center;
-}
-
-.aside__container > * {
-  flex: 1 1 45%;
-  width: 100%;
-  min-width: 210px;
-}
-
-.aside__list-container {
-  /* border: 2px solid darkblue; */
-  margin-bottom: 5em;
-}
-
-.contact-info__list-container {
-  padding-top: 1.5em;
-}
-
-.interest__list-item {
-  text-transform: capitalize;
-}
-
-    </style>
-</head>
-<body>
-    <header class="header__container">
-        <h2 class="header__heading">
-            Pascal Ojinnaka
-        </h2>
-        <hr>
-        <h1 class="header__sub-heading">
-            Backend Engineer
-        </h1>
-    </header> <!-- header__container -->
-    <div class="flex-container">
-        <main class="main__wrapper">
-            <section class="summary__container">
-                <h2 class="section__heading summary__heading">
-                    summary
-                </h2>
-                <p class="summary__paragraph">
-                    Experienced and results-orientedFull-stack Developer and lovesBackend with a deep passion forthe job and experience in buildinghigh quality Web applications andAPIs. Offering a strong attention todetail and accuracy, excellentproblem-solving skills, and theimportant ability to work in fast-paced team environments, Pascal is a reliable individual with determination to meet and exceed all assigned results.
-                </p>
-            </section><!-- summary__container -->
-            <section class="experience__container">
-                <h2 class="section__heading experience__heading">
-                    work experience
-                </h2>
-                <ul class="experience__work-list-container">
-                    <!-- work 1 starts -->
-                    <li class="experience__work-list-item">
-                        <h3 class="experience__position">
-                            Software Engineer 
-                        </h3>
-                        <small class="experience__workplace">
-                            <a href="https://training.zuri.team" class="hng-link">
-                                <img src="https://raw.githubusercontent.com/aoliadi/resume/main/assets/images/hng-logo.jpeg" alt="hng-logo" class="" width="50" height="50" >
-                            </a>
-                            <a href="https://training.zuri.team" class="hng-link">HNGi8/I4G</a>  / August, 2021 - present
-                        </small>
-                        <ul class="experience__activity-container">
-                            <li class="experience__activity">
-                                Quickly learned new skills and applied them to daily and weekly tasks
-                            </li>
-                            <li class="experience__activity">
-                                Improved problem-solving skills
-                            </li>
-                        </ul>
-                    </li>
-                    <!-- work 1 ends -->
-                    <!-- work 1 starts -->
-                    <li class="experience__work-list-item">
-                        <h3 class="experience__position">
-                            Software engineer
-                        </h3>
-                        <small class="experience__workplace">
-                           Outcess Solutions  / November, 2019 - present
-                        </small>
-                        <ul class="experience__activity-container">
-                            <li class="experience__activity">
-                                Develop backend API s for frontend implementations
-       
-                            </li>
-                            <li class="experience__activity">
-                                Pro-actively participate in the whole development process of multiple softwareapplications and websites
-                            </li>
-                        </ul>
-                    </li>
-                    <!-- work 1 ends -->
-                    <!-- work 1 starts -->
-                    <li class="experience__work-list-item">
-                        <h3 class="experience__position">
-                            Junior Software engineer
-                        </h3>
-                        <small class="experience__workplace">
-                            Brain and Mind Builder School. Ikorodu, Lagos / October, 2020 – April, 2021
-                        </small>
-                        <ul class="experience__activity-container">
-                            <li class="experience__activity">
-                                Created functional web applications and communicated with clients to identify theirneeds and requirement
-
-                            </li>
-                            <li class="experience__activity">
-                                Modified existing software to correct errors and optimize efficiency
-                            </li>
-                        </ul>
-                    </li>
+		<!-- start work -->
+		<div id="work" class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 wow bounce">
+						<h2>WHAT I DO</h2>
+					</div>
+                </div>  
                 
-                </ul>
-            </section> <!-- experience__container -->
-            <section class="education__container">
-                <h2 class="section__heading education__heading">
-                    education and training
-                </h2>
-                <ul class="education__list-container">
-                    <li class="education__list-item">
-                        <h3 class="education__position">
-                           Imo State University, Owerri
-                        </h3>
-                        <p class="education__course">
-                            Computer Science
-                        </p>
-                        <small class="education__workplace">
-                            Bachelor of Science / 2013 - 2017
-                        </small>
-                    </li>
-                   
-                </ul>
-            </section> <!-- education__container -->
-        </main>
-        <aside class="aside__container">
-            <ul class="aside__list-container contact-info__list-container">
-                <li class="contact-info__list-item">
-                    <a  href="mailto:ojinnnakapascal@gmail.com"
-                        class="contact-info__link"
-                    >
-                    ojinnnakapascal@gmail.com
-                </a>
-                </li>
-                <li class="contact-info__list-item">
-                    <a href="tel:+2348161718694"
-                        class="contact-info__link"
-                    >
-                        (+234) 816 171 8694
-                    </a>
-                </li>
-                <li class="contact-info__list-item">
-                    VGC, Lagos.
-                </li>
-                <li class="contact-info__list-item">
-                    <a  href="http://https://github.com/aoliadi"
-                        class="contact-info__link"
-                    >
-                        https://github.com/passy4ucj
-                    </a>
+                <div class="row">
+					<div class="col-md-4 col-xs-11 wow fadeInUp" data-wow-delay="0.6s">
+						<div class="media">
+							<div class="media-object media-left">
+								<i class="fa fa-laptop"></i>
+							</div>
+							<div class="media-body">
+								<h3 class="media-heading">Backend Engineer</h3>
+								<p>Backend Developer</p>
+							</div>
+						</div>
+					</div>
                     
-                </li>
-            </ul>
-            <section class="aside__list-container skills__container">
-                <h2 class="section__heading skills__heading">
-                    skills
-                </h2>
-                <ul class="skills__list-container">
-                  
-                    <li class="skills__list-item">
-                        Collaboration
-                    </li>
-                    <li class="skills__list-item">
-                        Excellent communication skills
-                    </li>
-                </ul>
-            </section>
-            <section class="aside__list-container stack__container">
-                <h2 class="section__heading stack__heading">
-                    stack
-                </h2>
-                <ul class="stack__list-container">
-                    <li class="stack__list-item">
-                        HTML5
-                    </li>
-                    <li class="stack__list-item">
-                        CSS3
-                    </li>
-                    <li class="stack__list-item">
-                        Sass
-                    </li>
-                    <li class="stack__list-item">
-                        JavaScript
-                    </li>
-                    <li class="stack__list-item">
-                        NodeJS
-                    </li>
-                    <li class="stack__list-item">
-                        ReactJS
-                    </li>
+					<div class="col-md-4 col-xs-11 wow fadeInUp" data-wow-delay="0.6s">
+						<div class="media">
+							<div class="media-object media-left">
+								<i class="fa fa-link"></i>
+							</div>
+							<div class="media-body">
+								<h3 class="media-heading">Technical Writer</h3>
+								<p>Technical Writer</p>
+							</div>
+						</div>
+					</div>
+                    
+					<div class="col-md-4 col-xs-11 wow fadeInUp" data-wow-delay="0.6s">
+						<div class="media">
+							<div class="media-object media-left">
+								<i class="fa fa-paper-plane"></i>
+							</div>
+							<div class="media-body">
+								<h3 class="media-heading">Azure &AMP; Develoepr</h3>
+								<p>Azure Developer</p>
+							</div>
+						</div>
+					</div>
+                    
+				</div>
+			</div>
+		</div>
+		<!-- end work -->
 
-                    <li class="stack__list-item">
-                        Git
-                    </li>
-                
-                </ul>
-            </section>
-            <section class="aside__list-container stack__container">
-                <h2 class="section__heading interest__heading">
-                    areas of interest
-                </h2>
-                <ul class="interest__list-container">
-                    <li class="interest__list-item">
-                        technical writing
-                    </li>
-                    <li class="interest__list-item">
-                        Backend Developer
-                    </li>
-                    <li class="interest__list-item">
-                        Devops
-                    </li>
-                  
-                </ul>
-            </section>
-        </aside>
-        <!-- form -->
-		<form action="/email" method="POST">
-			<h3>Feedback</h3>
-            <label for="exampleInputEmail1">Full Name</label>
-            <input type="text" class="form-control" id="email" aria-describedby="emailHelp" name="fullname" placeholder="Enter fullname" required>
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email" placeholder="Enter email" required>
-            <label for="exampleInputEmail1">Comment</label>
-            <textarea class="form-control" id="text" placeholder="comment"  name="comment" required></textarea>
-			<button type="submit" class="btn btn-primary">Submit</button>
-		</form>
-    </div> <!-- flex-container -->
-    
-</body>
+		<!-- start about -->
+		<div id="about" class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-xs-11 wow fadeInLeft" data-wow-delay="0.9s">
+						<h2>ABOUT LAVISH</h2>
+						<h4>Backend &AMP; DEVELOPER</h4>
+						<p>Experienced and results-orientedFull-stack Developer and loves Backend with a deep passion forthe job and experience in buildinghigh quality Web applications andAPIs. Offering a strong attention todetail and accuracy, excellentproblem-solving skills, and theimportant ability to work in fast-paced team environments, Pascalis a reliable individual withdetermination to meet and exceedall assigned results.</p>
+						
+					</div>
+					<div class="col-md-6 col-xs-11 wow fadeInRight" data-wow-delay="0.9s">
+						<span class="text-top">NodeJS <small>80%</small></span>
+							<div class="progress">
+								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 95%;"></div>
+							</div>
+						<span>Azure <small>80%</small></span>
+							<div class="progress">
+								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+							</div>
+						<span>Express <small>70%</small></span>
+							<div class="progress">
+								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+							</div>
+						<span>Typescript <small>70%</small></span>
+							<div class="progress">
+								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+							</div>
+						<span>MongoDB <small>70%</small></span>
+							<div class="progress">
+								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+							</div>
+						<span>PostgresSQL <small>70%</small></span>
+							<div class="progress">
+								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+							</div>
+						<span>Javascript <small>70%</small></span>
+							<div class="progress">
+								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+							</div>
+						<span>GraphQL  <small>90%</small></span>
+							<div class="progress">
+								<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end about -->
+
+		<!-- start portfolio -->
+		<div id="portfolio" class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="wow bounce">PORTFOLIO</h2>
+				</div>
+				<div class="col-md-4 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
+					<div class="portfolio-thumb">
+						<img src="images/Covid19Tracker.PNG" class="img-responsive" alt="portfolio img">
+							<div class="portfolio-overlay">
+								<h4>Covid 19 Tracker</h4>
+								<h5>Author: Pascal Ojinnaka</h5>
+							</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
+					<div class="portfolio-thumb">
+						<img src="images/delivery.PNG" class="img-responsive" alt="portfolio img">
+							<div class="portfolio-overlay">
+								<h4>Delivery Web App</h4>
+								<h5>Author: Pascal Ojinnaka</h5>
+							</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
+					<div class="portfolio-thumb">
+						<img src="images/HRMS.PNG" class="img-responsive" alt="portfolio img">
+							<div class="portfolio-overlay">
+								<h4>Human Resource Mgt Web App</h4>
+								<h5>Author: Pascal Ojinnaka</h5>
+							</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
+					<div class="portfolio-thumb">
+						<img src="images/netflix-clone.jpeg" class="img-responsive" alt="portfolio img">
+							<div class="portfolio-overlay">
+								<h4>Netflix Clone Web app</h4>
+								<h5>Author: Pascal</h5>
+							</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
+					<div class="portfolio-thumb">
+						<img src="images/plugged-api.PNG" class="img-responsive" alt="portfolio img">
+							<div class="portfolio-overlay">
+								<h4>Hospital Mgt API</h4>
+								<h5>Author: Pascal</h5>
+							</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
+					<div class="portfolio-thumb">
+						<img src="images/yaleshop.PNG" class="img-responsive" alt="portfolio img">
+							<div class="portfolio-overlay">
+								<h4>E Commerce Web app</h4>
+								<h5>Author: Pascal</h5>
+							</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
+					<div class="portfolio-thumb">
+						<img src="images/devcamper-api.PNG" class="img-responsive" alt="portfolio img">
+							<div class="portfolio-overlay">
+								<h4>Bootcamp API</h4>
+								<h5>Author: Pascal</h5>
+							</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<!-- end portfolio -->
+
+		<!-- start contact -->
+		<div id="contact" class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 col-lg-offset-1 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+						<address>
+							<p class="contact-title">CONTACT ME</p>
+							<p><i class="fa fa-phone"></i> 081-6171-8694</p>
+							<p><i class="fa fa-envelope-o"></i> ojinnnaka@gmail.com</p>
+							<p><i class="fa fa-map-marker"></i> Lagos, Nigeria</p>
+						</address>
+					</div>
+					<div class="col-lg-6 col-md-6 col-xs-10 wow fadeInUp" data-wow-delay="0.6s">
+						<form role="form" method="post" action="/email">
+							<input name="name" type="text" class="form-control" id="name" placeholder="Your Name">
+							<input name="email" type="email" class="form-control" id="email" placeholder="Your Email">
+							<textarea name="message" rows="5" class="form-control" id="message" placeholder="Your Message"></textarea>
+							<input name="send" type="submit" class="form-control" id="send" value="SEND ME">
+						</form>
+					</div>
+					<div class="col-md-1 col-sm-1"></div>
+				</div>
+			</div>
+		</div>
+		<!-- end contact -->
+
+		<!-- start footer -->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 wow fadeIn" data-wow-delay="0.9s">
+						<p>Copyright &copy; 2021 Pascal Ojinnaka
+                        
+                      </p>
+						<hr>
+						<ul class="social-icon">
+							<li><a href="#" class="fa fa-facebook"></a></li>
+							<li><a href="#" class="fa fa-twitter"></a></li>
+							<li><a href="#" class="fa fa-instagram"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- end footer -->
+
+	</div>
+
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- bootstrap -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- fullpage -->
+		<script src="js/jquery.fullPage.js"></script>
+		<!-- smoothScroll -->
+		<script src="js/smoothscroll.js"></script>
+		<!-- wow -->
+		<script src="js/wow.min.js"></script>
+		<!-- text rotater -->
+		<script src="js/jquery.simple-text-rotator.js"></script>
+		<!-- custom -->
+		<script src="js/custom.js"></script>
+
+	</body>
 </html>
